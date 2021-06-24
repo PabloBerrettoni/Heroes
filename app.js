@@ -11,6 +11,10 @@ app.listen(port, () => {
     console.log(`Listening on localhost:${port}/home`);
 });
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/DH-Heroes/views/index.html'));
+});
+
 app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, '/DH-Heroes/views/index.html'));
 });
