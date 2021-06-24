@@ -28,6 +28,7 @@ ul {
 
 li {
   float: left;
+  border-right: 1px solid #bbb;
 }
 
 li a {
@@ -38,7 +39,10 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+.active {
+  background-color: goldenrod;
+}
+
 li a:hover {
   background-color: #111;
 }
